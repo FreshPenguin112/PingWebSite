@@ -19,6 +19,6 @@ jobs:
     - name: Install dependencies
       run: dotnet tool install Web.Ping -g
     - name: Ping www.zkea.net
-      run: Web.Ping --host https://www.pybot3.101freshpenguin.repl.co
+      run: Web.Ping --host https://www.zkea.net/
     - name: Ping demo.zkea.net
-      run: Web.Ping --host http://demo.zkea.net
+      run: Web.Ping --host https://www.pybot3.101freshpenguin.repl.co
