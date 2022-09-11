@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
   schedule: 
-    - cron: '*/10 * * * *' #every 10 minutes
+    - cron: '*/4 * * * *' #every 10 minutes
 jobs:
   ping:
 
@@ -19,6 +19,6 @@ jobs:
     - name: Install dependencies
       run: dotnet tool install Web.Ping -g
     - name: Ping www.zkea.net
-      run: Web.Ping --host http://www.zkea.net
+      run: Web.Ping --host https://www.pybot3.101freshpenguin.repl.co
     - name: Ping demo.zkea.net
       run: Web.Ping --host http://demo.zkea.net
